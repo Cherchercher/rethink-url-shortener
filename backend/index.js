@@ -45,13 +45,11 @@ var app = express();
 app.use(cors({ origin: "*" }));
 var jsonParser = bodyParser.json();
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
-
-// Parse Server plays nicely with the rest of your web routes
 app.get("/", function (req, res) {
   res.status(200).send("URL Shortener. Visit api-docs for documentation.");
 });
-// redisMiddleware,
 
+// redisMiddleware,
 app.use("/shortLink", jsonParser, shortLink);
 
 app.use((error, req, res, next) => {
