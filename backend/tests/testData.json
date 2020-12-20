@@ -1,0 +1,13 @@
+{
+  "CountURL": [
+    {
+      "count": 1
+    }
+  ],
+  "shortLink": [
+    {
+      "shortenedURL": "A",
+      "destinationURL": "https://aloha.com"
+    }
+  ]
+}

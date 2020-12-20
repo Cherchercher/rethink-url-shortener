@@ -1,0 +1,35 @@
+swagger: "2.0"
+paths:
+  /shortLink/get/{shortUrl}:
+    parameters:
+      - name: shortUrl
+        in: path
+        required: true
+        description: the shortUrl to fetch longURL
+        schema:
+          type: string
+    get:
+      responses:
+        "200":
+          description: the destination url being returned
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  destination: # the destination URL
+                    type: string
+                  origin: # the short URL
+                    type: string
+
+  # the path item of the linked operation
+  /shortLink/create:
+    post:
+      summary: shorten a URL
+      requestBody:
+        content: application/json
+        required: true
+      content: application/json
+      responses:
+        "200":
+          description: shortened url associated with the destination url

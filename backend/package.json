@@ -1,0 +1,28 @@
+{
+  "name": "rethink-urlshortener-backend",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "babel-node index.js",
+    "test": "mocha ./tests/unitTests.js --delay"
+  },
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "dotenv": "^8.2.0",
+    "express": "~4.16.1",
+    "mongoose": "^5.10.13",
+    "morgan": "~1.9.1",
+    "redis": "^3.0.2",
+    "swagger-ui-express": "^4.1.4",
+    "yamljs": "^0.3.0",
+    "chai": "^4.1.2",
+    "mocha": "^6.2.2",
+    "mocha-prepare": "^0.1.0"
+  },
+  "devDependencies": {
+    "mongo-unit": "^2.0.1"
+  }
+}

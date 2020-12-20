@@ -1,0 +1,1 @@
+exports.shortLink = require("./shortLink");
