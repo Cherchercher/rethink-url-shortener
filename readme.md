@@ -70,5 +70,7 @@ change port 1337 to process.env.PORT if neccesary
 # libraries used
 
 [Swagger](https://swagger.io/solutions/api-documentation/) for API Documentation
+
 [Mongoose](https://github.com/Automattic/mongoose) object modeling for Mongo
+
 [mocha](https://github.com/mochajs/mocha), [chai](https://github.com/chaijs/chai), and [mongo-unit](https://www.npmjs.com/package/mongo-unit) with minimum set-up and fast in-memory database for testing
